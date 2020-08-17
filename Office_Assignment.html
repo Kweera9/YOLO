@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error Details Website</title>
+<link rel="StyleSheet" href="./StyleSheet.css">
+
+<meta charset="UTF-8">
+
+
+</head>
+
+<body>
+  <h1> Sample UI Design </h1> 
+  <br><br><br>
+<header>
+  <marquee id = 'date' behavior="scroll" ></marquee> 
+</header>
+<br><br>
+	<div class="navbar">
+  <a href="#home">Home</a>
+<div class="dropdown">
+    <button class="dropbtn">System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">MDMS</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Markets
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#">
+        <!-- <ul> 
+          <li>
+            <a href ="#">Subscribe my channel</a>
+          </li>
+
+        </ul> -->
+      </a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Errors
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">No of Errors
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
+      
+    </div>
+  </div>
+  <a href="#startdate">Reports</a>
+	</div>
+
+
+  <div class = "footer">
+    <input type="file" id="fileUpload" /> 
+    <input type="button" id="upload" value="Upload" onclick="Upload()" />
+    <hr />
+    <div id="dvExcel"></div>
+</div>
+
+</body>
+<script src="./1.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+
+</html>
