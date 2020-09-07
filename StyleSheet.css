@@ -3,56 +3,75 @@ body {
 }
 
 h1 {
-
 	text-align: center;
 	color: #333;
 }
 
  .navbar {
-
  	overflow :hidden;
- 	background-color: transparent;
+ 	background-color: black;
  	font-family: Arial;
  }
 
-
 header {
   background-color: white;
-  padding: -10px;
+  padding: 10px;
   text-align: right;
-  font-size: 35px;
-  color: brown;
+  font-size: 25px;
+  color: rgb(185, 29, 29);
  }
 
  .navbar a {
 
-  background-color: #4CAF50; /* Green */
+  background-color: #2a852d; /* Green */
   border: none;
   color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  margin: 14px 4px;
   cursor: pointer;
-  border-radius: 2px;
-
-  /*float: left;
+  border-radius: 10px;
+  float : left;
+  width: 6%;
   font-size: 16px;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  */
+  
+  
  }
+ .navbar a:hover, .dropdown #market:hover, .dropdown #error:hover, .dropdown #No_Of_Error:hover, 
+ .dropdown #SessionId:hover,.dropdown #errorMessage:hover{
+  background-color: rgb(202, 202, 17);
+}  
+
 
 /* drop down container */
 
  .dropdown {
+   float: left;
+   overflow: none;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: none;
 
-float: left;
+/* float: left;
 overflow: none;
+background-color:none;
+border: none;
+color: rgb(134, 29, 29);
+padding: 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 4px; */
 
  }
 
@@ -60,7 +79,7 @@ overflow: none;
 
  .dropdown .dropbtn {
 
-   background-color: #4CAF50; /* Green */
+  /* background-color: #4CAF50;
   border: none;
   color: white;
   padding: 20px;
@@ -70,7 +89,7 @@ overflow: none;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 2px; */
 
  	/*font-size: 16px;
  	border: none;
@@ -84,19 +103,13 @@ overflow: none;
  }
 
  
-
- .navbar a:hover, .dropdown:hover .dropbtn{
-
- 	background-color: yellow;
- }  
-
  /* drop down content(hidden by default) */
 
  .dropdown-content {
 
  	display: none;
  	position: absolute;
- 	background-color: #f9f9f9;
+ 	background-color: #5e0c0c;
  	min-height: 160px;
  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -113,14 +126,22 @@ overflow: none;
  }
 
  
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* show the drop down menu on hover */
-
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown #market, .dropdown #error, .dropdown #No_Of_Error, .dropdown #SessionId,
+.dropdown #errorMessage {
+  background-color: #2a852d; 
+  border: none;
+  color:white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:none;
+  width: 6%;
+  cursor: pointer;
+  border-radius: 10px;
+  /* float: left; */
+  width: auto;
 }
 
 .footer {

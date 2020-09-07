@@ -1,4 +1,4 @@
-
+ 
 let onHover , onMouseOut;
 let MonHover1, MonOut1, MonOut2;
 
@@ -50,12 +50,22 @@ function Upload() {
 
         //Read all rows from First Sheet into an JSON array.
         var excelRows = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[firstSheet]);
-       
         console.log(excelRows);
+        
+        var markets = document.getElementById('market');
+        for (var i = 0; i < excelRows.length; i++) {
+            // POPULATE SELECT ELEMENT WITH JSON.
+            markets.innerHTML = markets.innerHTML +
+                '<option value="' + excelRows[i] + '">' + excelRows[i].Market + '</option>';
+        }
+        console.log(excelRows[0].Market)
+
   
        let noOfErrors = document.querySelectorAll('.dropdown-content')[3];
         let Errors =  noOfErrors.querySelectorAll('a');
         console.log(Errors);
+
+        
 
         Errors[0].innerHTML = excelRows.length;
        // var n=document.getElementsByName("Market").value;
@@ -119,6 +129,7 @@ function Upload() {
             }
         }*/
     };
+    
 
   
 function changeText(){

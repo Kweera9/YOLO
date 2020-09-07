@@ -18,65 +18,49 @@
 <br><br>
 	<div class="navbar">
   <a href="#home">Home</a>
-<div class="dropdown">
-    <button class="dropbtn">System
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">MDMS</a>
-    </div>
+  <div class="dropdown">
+    
+    <select id="market" onchange ="SetMarketValue(this.options[this.selectedIndex].value)" >
+      <option value="-1">Markets</option>
+  </select>
+     
   </div>
 
   <div class="dropdown">
-    <button class="dropbtn">Markets
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#">
-        <!-- <ul> 
-          <li>
-            <a href ="#">Subscribe my channel</a>
-          </li>
-
-        </ul> -->
-      </a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-    </div>
+    
+    <select id="error" onchange="SetErrorValue(this.options[this.selectedIndex].value)">
+      <option value="-1">Errors</option>
+  </select>
+     
+  </div>
+  <div class="dropdown">
+    
+    <select id="No_Of_Error">
+      <option value ="-1" >No of Errors</option>
+  </select>
+     
   </div>
 
   <div class="dropdown">
-    <button class="dropbtn">Errors
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-      <a onmouseover="changeText()" onmouseout="backText()" href="#"></a>
-    </div>
+    
+    <select id="SessionId" onchange="setSessionId(this.options[this.selectedIndex].value)">
+      <option value ="-1" >Session ID</option>
+  </select>
+     
   </div>
+  
   <div class="dropdown">
-    <button class="dropbtn">No of Errors
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a onmouseover="MonHover()" onmouseout="MonOut()" href="#"></a>
-      
-    </div>
+    
+    <select id="errorMessage">
+      <option value ="-1" >Error Message</option>
+  </select>
+     
   </div>
-  <a href="#startdate">Reports</a>
+  
+
+
+  <!-- <div class="dropdown"></div> -->
+  <a href="#datetime">Date Time</a>
 	</div>
 
 
@@ -88,9 +72,10 @@
 </div>
 
 </body>
-<script src="./1.js"></script>
+<script src="./script.js"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js" type="text/javascript"></script>
 
 </html>
